@@ -100,15 +100,17 @@
 
     <aside class="absolute right-0 top-0 bottom-0 h-full w-2/6 bg-red-100 text-red-500 p-6">
 <!--   show some headers or tabs   -->
-      <h3 class="text-xl font-medium">
-        Your Bag
-      </h3>
-      <p>
-        Guest
-      </p>
-      <div class="my-6">
-        
-        <div class="px-2 py-4 bg-gray-300 rounded">
+      <div class="mb-10">
+        <h3 class="text-xl font-medium">
+          Your Bag
+        </h3>
+        <p>
+          Guest
+        </p>  
+      </div>
+      
+      <div class="">
+        <div class="px-4 py-6 bg-gray-300 rounded mb-10">
           <h5 class="text-xl font-medium">
             Naive Low Chair
           </h5>
@@ -117,9 +119,26 @@
           </p>
           
         </div>
-        <button type="button" class="py-4 w-full bg-yellow-400 hover:bg-yellow-500 hover:text-white">
+        
+        
+        <div class="bg-white">
+          <form class="">
+            <div class="mb-6">
+              <label class="uppercase text-sm font-medium block mb-2" for="credit-card">Credit Card Number</label>
+              <input class="p-3 w-full" type="number" placeholder="----/----/----" id="credit-card" />
+            </div>
+            <div class="mb-6">
+              <label class="uppercase text-sm font-medium block mb-2" for="cvv">CVV</label>
+              <input class="p-3 w-full" type="number" placeholder="123" id="cvv" />
+            </div>
+    
+          <button type="submit" class="py-4 w-full bg-yellow-400 hover:bg-yellow-500 hover:text-white ">
             Proceed to Checkout
-          </button>
+          </button>  
+          </form>
+          
+        </div>
+        
       </div>
 <!--     then show bag items (if any) and a checkout button   -->
     </aside>
