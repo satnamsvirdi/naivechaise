@@ -9,14 +9,18 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <!--     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace()
-    </script>
+    <style>
+      feather {
+        width: 24px;
+        height: 24px;
+        stroke: red;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+    </style>
+    
     
   </head>
   <body>
@@ -40,7 +44,11 @@
             <li
               class="hover:text-gray-900"
             >
-              <a href="#" class="block py-6 px-4"><i data-feather="search"></i></a>
+              <a href="#" class="block py-6 px-4">
+                <svg class="feather">
+                  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
+                </svg>
+              </a>
             </li>
             <li
               class="hover:text-gray-900"
