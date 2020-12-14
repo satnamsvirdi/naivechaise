@@ -13,11 +13,16 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+    
   </head>
   <body>
     <header class="min-w-full bg-white text-gray-400">
       <div class="container flex gap-4 mx-auto">
-        <div class="flex-1 p-0">
+        <div class="flex-1 hidden md:block lg-order-1 p-0">
           <ol class="flex">
             <li class="hover:text-gray-900">
               <a href="#" class="block p-6">About</a>
@@ -27,92 +32,75 @@
             </li>
           </ol>
         </div>
-        <div
-          class="flex-1 text-center self-center text-2xl font-serif text-gray-800"
-        >
-          <a href="#" class="inline-block">Naive Chaise</a>
+        <div class="flex-1 order-1 lg:order-2 text-left lg:text-center self-center text-2xl font-serif text-gray-800">
+              <a href="#" class="inline-block px-6 py-5 lg:p-0 lg:inline-block">Naive Chaise</a>
         </div>
-        <div class="flex-1 text-right self-center">
+        <div class="flex-1 hidden lg:block lg:order-3 text-right self-center">
           <ol class="flex justify-end">
-            <li class="hover:text-gray-900">
-              <a href="#" class="block py-6 px-4">s</a>
+            <li
+              class="hover:text-gray-900"
+            >
+              <a href="#" class="block py-6 px-4"><i data-feather="search"></i></a>
             </li>
-            <li class="hover:text-gray-900">
+            <li
+              class="hover:text-gray-900"
+            >
               <a href="#" class="block py-6 px-4">p</a>
             </li>
-            <li class="hover:text-gray-900">
+            <li
+              class="hover:text-gray-900"
+            >
               <a href="#" class="block py-6 px-4">b</a>
             </li>
           </ol>
         </div>
+        <div class="order-4 lg:hidden">
+          <button type="button" class="p-6 hover:text-gray-900">Menu</button>
+        </div>
       </div>
+      <div class="container bg-red-500 p-6 hidden">TODO://menu items</div>
     </header>
 
     <main class="bg-white">
       <section class="bg-gray-100">
-        <div class="container flex mx-auto">
+        <div class="container flex flex-col lg:flex-row mx-auto">
           <div class="flex-1 ">
-            <div class="flex justify-center h-full w-full py-28 relative">
+            <div class="flex justify-center h-full w-full lg:py-28 relative">
               <img
                 style="width: 400px; heigth: 800px; object-fit: cover;"
-                src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                alt="naive low chair photo"
-                class=""
-              />
+               src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="naive low chair photo" class="" />
               <span
-                class="uppercase bg-yellow-200 rounded-full p-6 h-20 w-20 absolute right-40 top-28 flex place-items-center"
+                class="uppercase bg-yellow-200 rounded-full p-6 h-20 w-20 absolute right-6 top-6 lg:right-40 lg:top-28 flex place-items-center"
               >
                 <strong>10% off</strong>
               </span>
             </div>
           </div>
           <div class="flex-1">
-            <div class="py-36">
-              <div class="m-0 p-0 mb-10 border-b-2 border-gray-200 mr-36">
-                <p class="uppercase text-xs font-regular m-0 p-0 mb-1">
-                  EMKO Collection
-                </p>
-                <h2
-                  class="font-semibold text-3xl uppercase leading-relaxed m-0 p-0 mb-2"
-                >
-                  Naive Low Chair
-                </h2>
-                <p class="font-medium text-2xl m-0 p-0 mb-6">
-                  <small>$</small>799
-                </p>
+            <div class="py-10 px-4 lg:py-36 lg:px-0">
+              <div class="m-0 p-0 mb-10 border-b-2 border-gray-200 lg:mr-36">
+                <p class="uppercase text-xs font-regular m-0 p-0 mb-1">EMKO Collection</p>
+                <h2 class="font-semibold text-3xl uppercase leading-relaxed m-0 p-0 mb-2">Naive Low Chair</h2>
+                <p class="font-medium text-2xl m-0 p-0 mb-4 lg:mb-6"><small>$</small>799</p>
               </div>
 
               <div class="mb-12">
-                <ul class="flex gap-2 ">
-                  <a
-                    href="#"
-                    class="bg-gray-100 border border-yellow-800 rounded-full p-1 -m-1"
-                    ><li class=" w-4 h-4 rounded-full bg-red-800"></li
-                  ></a>
-                  <a href="#" class="bg-gray-100 rounded-full"
-                    ><li class=" w-4 h-4 rounded-full bg-green-800"></li
-                  ></a>
-                  <a href="#" class="bg-gray-100 rounded-full"
-                    ><li class=" w-4 h-4 rounded-full bg-blue-800"></li
-                  ></a>
-                  <a href="#" class="bg-gray-100 rounded-full"
-                    ><li class=" w-4 h-4 rounded-full bg-yellow-800"></li
-                  ></a>
-                  <a href="#" class="bg-gray-100 rounded-full"
-                    ><li class=" w-4 h-4 rounded-full bg-pink-800"></li
-                  ></a>
-                  <a href="#" class="bg-gray-100 rounded-full"
-                    ><li class=" w-4 h-4 rounded-full bg-purple-800"></li
-                  ></a>
+                <ul class="flex gap-4 lg:gap-2 ">
+                  <a href="#" class="bg-gray-100 border border-yellow-800 rounded-full p-1 -m-1"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-red-800"></li></a>
+                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-green-800"></li></a>
+                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-800"></li></a>
+                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-yellow-800"></li></a>
+                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-pink-800"></li></a>
+                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-purple-800"></li></a>
                 </ul>
               </div>
-              <div class="flex w-24 h-8 border border-gray-300 mb-12">
+              <div class="flex w-1/2 h-10 lg:w-24 lg:h-8 border border-gray-300 mb-12">
                 <button class="bg-white flex-1" type="button">-</button>
                 <button class="bg-gray-100 flex-1" type="button">01</button>
                 <button class="bg-white flex-1" type="button">+</button>
               </div>
               <button
-                class="py-3 px-7 bg-yellow-400 hover:bg-yellow-500"
+                class="w-full lg:w-auto py-3 px-7 bg-yellow-400 hover:bg-yellow-500"
                 type="button"
               >
                 Buy Now
@@ -124,26 +112,17 @@
 
       <section>
         <div class="container mx-auto mt-12">
-          <div class="flex flex-col">
-            <h2 class="text-5xl font-medium mb-8">Chair to live with</h2>
-            <div class="flex bg-red-700" style="height: 500px">
-              <div class="flex-1">
-                <img
-                  src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                  alt="chair image"
-                />
+          <div class="flex flex-col mx-4 lg:mx-0">
+            <h2 class="text-4xl lg:text-5xl font-medium mb-8">Chair to live with</h2>
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 lg:bg-red-700" style="min-height: 500px; max-height: auto;">
+              <div class="flex-1" >
+                <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
               </div>
               <div class="flex-1">
-                <img
-                  src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                  alt="chair image"
-                />
+                <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
               </div>
               <div class="flex-1">
-                <img
-                  src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                  alt="chair image"
-                />
+                <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
               </div>
             </div>
           </div>
@@ -151,80 +130,63 @@
       </section>
 
       <section>
-        <div class="container flex mx-auto mt-24">
+        <div class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 ">
           <div class="flex-1">
-            <h3 class="text-5xl font-medium px-4">
-              Some heading text goes here
-            </h3>
+            <h3 class="text-3xl lg:text-5xl font-medium lg:pr-4 w-11/12">Some heading text goes here1</h3>
           </div>
-          <div class="flex-1">
-            <img
-              src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-              alt="chair image unsplash"
-            />
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container flex mx-auto mt-24">
-          <div class="flex-1 ">
-            <img
-              src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-              alt="chair image"
-            />
-          </div>
-          <div class="flex-1">
-            <h3 class="text-5xl font-medium px-4">
-              Some heading text goes here
-            </h3>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container flex mx-auto mt-24">
-          <div class="flex-1">
-            <h3 class="text-5xl font-medium px-4">
-              Some heading text goes here
-            </h3>
-          </div>
-          <div class="flex-1">
-            <img
-              src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-              alt="chair image"
-            />
+          <div class="flex-1 mt-4 lg:mt-0 :w-full">
+            <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image unsplash" />
           </div>
         </div>
       </section>
 
       <section>
-        <div class="container flex flex-col mx-auto mt-24">
-          <div class="">
-            <h3 class="text-5xl font-medium mb-6">
-              Some heading text goes here
-            </h3>
+        <div class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 ">
+          <div class="flex-1 order-2 lg:order-1 mt-4 lg:mt-0 w-full">
+            <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
           </div>
-          <div class="">
-            <img
-              style="height: 250px; width: 100%; object-fit: cover;"
-              src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-              alt="chair image"
-            />
+          <div class="flex-1 order-1 lg:order-2">
+            <h3 class="text-3xl lg:text-5xl font-medium lg:pr-4 lg:pl-4 w-11/12">Some heading text goes here</h3>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 ">
+          <div class="flex-1 w-11/12 lg:w-full">
+            <h3 class="text-3xl lg:text-5xl font-medium lg:pr-4 w-11/12">Some heading text goes here</h3>
+          </div>
+          <div class="flex-1 mt-4 lg:mt-0 w-11/12 lg:w-full">
+            <img 
+            class=""
+            src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
           </div>
         </div>
       </section>
 
       <section>
-        <div class="container  mx-auto text-center mt-24">
-          <div class="flex  mx-12 border border-gray-300 rounded-md py-6">
-            <div class="flex-1">
+        <div class="container flex flex-col px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 ">
+          <div class="">
+            <h3 class="text-3xl lg:text-5xl font-medium lg:mb-6 w-11/12 ">Some heading text goes here</h3>
+          </div>
+          <div class="mt-4 lg:mt-0 w-full">
+            <img style="height: 250px; width: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="container lg:mx-auto text-center mt-20 lg:mt-24">
+          <div class="flex flex-col lg:flex-row mx-4 lg:mx-12 border border-gray-300 rounded-md py-6">
+            <div class="flex-1 mb-10 lg:mb-0">
               <div>icon</div>
               <p class="font-light">Fast Delivery</p>
             </div>
-            <div class="flex-1">
+            <div class="flex-1 mb-10 lg:mb-0">
               <div>icon</div>
               <p class="font-light">24 Months Guarantee</p>
             </div>
-            <div class="flex-1">
+            <div class="flex-1 mb-3 lg:mb-0">
               <div>icon</div>
               <p class="font-light">Return Policy</p>
             </div>
@@ -233,26 +195,22 @@
       </section>
 
       <section>
-        <div
-          class="container flex mx-auto  border-t-2 border-b-2 border-gray-300 py-10 px-6 mt-24"
-        >
-          <div class="flex-1">
-            <h6 class="text-sm font-medium uppercase">
-              Technical Specifications
-            </h6>
+        <div class="container flex flex-col lg:flex-row mx-auto border-t-2 border-b-2 border-gray-300 py-10 px-6 mt-24 text-gray-500">
+          <div class="flex-1 mb-6 lg:mb-0">
+            <h6 class="text-xl text-gray-600 font-semibold uppercase">Technical Specifications</h6>
           </div>
           <div class="flex-1">
             <div class="flex flex-col">
               <div class="mb-6">
-                <h5 class="font-medium uppercase text-sm mb-0.5">Dimensions</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Dimensions</h5>
                 <p>492 x 389 x H 823mm</p>
               </div>
               <div class="mb-6">
-                <h5 class="font-medium uppercase text-sm mb-0.5">Material</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Material</h5>
                 <p>Solid beech, leather, Kvadrat fabric</p>
               </div>
               <div class="mb-6">
-                <h5 class="font-medium uppercase text-sm mb-0.5">Paint</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Paint</h5>
                 <p>Polyurethane</p>
               </div>
             </div>
@@ -260,15 +218,15 @@
           <div class="flex-1">
             <div class="flex flex-col">
               <div class="mb-6">
-                <h5 class="font-medium uppercase text-sm mb-0.5">Assembly</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Assembly</h5>
                 <p>Partial Assembly Required</p>
               </div>
               <div class="mb-6">
-                <h5 class="font-medium uppercase text-sm mb-0.5">Wood</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Wood</h5>
                 <p>Solid Ash</p>
               </div>
               <div class="mb-6">
-                <h5 class="font-medium uppercase text-sm mb-0.5">Leather</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Leather</h5>
                 <p>Genuine Leather</p>
               </div>
             </div>
@@ -277,36 +235,23 @@
       </section>
 
       <section>
-        <div class="container flex mx-auto mt-24">
-          <div class="flex-1">
-            <h4 class="text-2xl font-medium">Furniture to live with</h4>
+        <div class="container flex flex-col lg:flex-row mx-auto mt-12 lg:mt-24 px-4 lg:px-0">
+          <div class="flex-1 mb-10 lg:mb-0">
+            <h4 class="text-2xl font-medium ">Furniture to live with</h4>
           </div>
           <div class="">
-            <button
-              type="button"
-              class="py-3 px-7 bg-yellow-400 hover:bg-yellow-500"
-            >
-              Buy Now
-            </button>
+            <button type="button" class="w-full lg:w-auto py-3 px-7 bg-yellow-400 hover:bg-yellow-500">Buy Now</button>
           </div>
         </div>
       </section>
-
-      <section class="bg-gray-100">
-        <div class="container mx-auto mt-24 pt-24 pb-32 px-36">
+      
+      <section class="bg-gray-100 lg:bg-white">
+        <div class="container lg:bg-gray-100 mx-auto mt-16 lg:mt-24 pt-10 pb-16 lg:pt-24 lg:pb-32 px-4 lg:px-36">
           <p class="mb-3">Subscribe to our newsletter</p>
           <div class="bg-gray-500 ">
             <form class="flex w-full">
-              <input
-                type="email"
-                placeholder="Type your email here"
-                class="p-3 flex-1"
-              />
-              <button
-                class="py-3 px-7 bg-gray-500 hover:bg-gray-600 text-white"
-              >
-                Subscribe
-              </button>
+              <input type="email" placeholder="Type your email here" class="p-3 flex-1" />
+              <button class="py-3 px-7 bg-gray-500 hover:bg-gray-600 text-white">Subscribe</button>
             </form>
           </div>
         </div>
@@ -314,17 +259,16 @@
     </main>
 
     <footer class="">
-      <div class="container flex mx-auto pt-6 pb-16 ">
-        <div class="flex-1">
+      <div class="container flex flex-col lg:flex-row px-4 lg:px-0 md:mx-auto pt-14 lg:pt-24 pb-16 lg:pb-28 md:px-4">
+        <div class="flex-1 order-2 lg:order-1">
           <h5 class="font-serif text-3xl leading-loose">Naive Chaise</h5>
-          <p class="max-w-md">
+          <p class="w-11/12">
             lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet dolor sit amet lorem ipsum amet dolor sit amet lorem
-            ipsum amet dolor sit amet lorem ipsum dolor sit amet ipsum dolor sit
-            amet.
+            dolor sit amet dolor sit amet lorem ipsum amet dolor sit amet lorem 
+            ipsum amet dolor sit amet lorem ipsum dolor sit amet ipsum dolor sit amet.
           </p>
         </div>
-        <div class="flex-1 mt-5">
+        <div class="flex-1 order-1 lg:order-2 mt-0 lg:mt-5 mb-6 lg:mb-0">
           <h6 class="uppercase font-medium text-sm mb-4">Connect with us</h6>
           <ol class="flex gap-4">
             <li>f</li>
