@@ -9,12 +9,6 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    
-    <script>
-      feather.replace({stroke: red})
-    </script>
-    
-    
   </head>
   <body>
     <header class="min-w-full bg-white text-gray-400">
@@ -29,29 +23,69 @@
             </li>
           </ol>
         </div>
-        <div class="flex-1 order-1 lg:order-2 text-left lg:text-center self-center text-2xl font-serif text-gray-800">
-              <a href="#" class="inline-block px-6 py-5 lg:p-0 lg:inline-block">Naive Chaise</a>
+        <div
+          class="flex-1 order-1 lg:order-2 text-left lg:text-center self-center text-2xl font-serif text-gray-800"
+        >
+          <a href="#" class="inline-block px-6 py-5 lg:p-0 lg:inline-block"
+            >Naive Chaise</a
+          >
         </div>
         <div class="flex-1 hidden lg:block lg:order-3 text-right self-center">
           <ol class="flex justify-end">
-            <li
-              class="hover:text-gray-900"
-            >
+            <li class="hover:text-gray-900">
               <a href="#" class="block py-6 px-4">
-                <img src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fsearch.svg?v=1607940039962" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+                  />
+                </svg>
               </a>
             </li>
-            <li
-              class="hover:text-gray-900"
-            >
+            <li class="hover:text-gray-900">
               <a href="#" class="block py-6 px-4">
-              <i data-feather="circle"></i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                  />
+                </svg>
               </a>
             </li>
-            <li
-              class="hover:text-gray-900"
-            >
-              <a href="#" class="block py-6 px-4">b</a>
+            <li class="hover:text-gray-900">
+              <a href="#" class="block py-6 px-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z"
+                  />
+                </svg>
+              </a>
             </li>
           </ol>
         </div>
@@ -69,7 +103,10 @@
             <div class="flex justify-center h-full w-full lg:py-28 relative">
               <img
                 style="width: 400px; heigth: 800px; object-fit: cover;"
-               src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="naive low chair photo" class="" />
+                src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                alt="naive low chair photo"
+                class=""
+              />
               <span
                 class="uppercase bg-yellow-200 rounded-full p-6 h-20 w-20 absolute right-6 top-6 lg:right-40 lg:top-28 flex place-items-center"
               >
@@ -80,22 +117,58 @@
           <div class="flex-1">
             <div class="py-10 px-4 lg:py-36 lg:px-0">
               <div class="m-0 p-0 mb-10 border-b-2 border-gray-200 lg:mr-36">
-                <p class="uppercase text-xs font-regular m-0 p-0 mb-1">EMKO Collection</p>
-                <h2 class="font-semibold text-3xl uppercase leading-relaxed m-0 p-0 mb-2">Naive Low Chair</h2>
-                <p class="font-medium text-2xl m-0 p-0 mb-4 lg:mb-6"><small>$</small>799</p>
+                <p class="uppercase text-xs font-regular m-0 p-0 mb-1">
+                  EMKO Collection
+                </p>
+                <h2
+                  class="font-semibold text-3xl uppercase leading-relaxed m-0 p-0 mb-2"
+                >
+                  Naive Low Chair
+                </h2>
+                <p class="font-medium text-2xl m-0 p-0 mb-4 lg:mb-6">
+                  <small>$</small>799
+                </p>
               </div>
 
               <div class="mb-12">
                 <ul class="flex gap-4 lg:gap-2 ">
-                  <a href="#" class="bg-gray-100 border border-yellow-800 rounded-full p-1 -m-1"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-red-800"></li></a>
-                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-green-800"></li></a>
-                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-800"></li></a>
-                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-yellow-800"></li></a>
-                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-pink-800"></li></a>
-                  <a href="#" class="bg-gray-100 rounded-full"><li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-purple-800"></li></a>
+                  <a
+                    href="#"
+                    class="bg-gray-100 border border-yellow-800 rounded-full p-1 -m-1"
+                    ><li
+                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-red-800"
+                    ></li
+                  ></a>
+                  <a href="#" class="bg-gray-100 rounded-full"
+                    ><li
+                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-green-800"
+                    ></li
+                  ></a>
+                  <a href="#" class="bg-gray-100 rounded-full"
+                    ><li
+                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-800"
+                    ></li
+                  ></a>
+                  <a href="#" class="bg-gray-100 rounded-full"
+                    ><li
+                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-yellow-800"
+                    ></li
+                  ></a>
+                  <a href="#" class="bg-gray-100 rounded-full"
+                    ><li
+                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-pink-800"
+                    ></li
+                  ></a>
+                  <a href="#" class="bg-gray-100 rounded-full"
+                    ><li
+                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-purple-800"
+                    ></li
+                  ></a>
                 </ul>
               </div>
-              <div class="flex w-1/2 h-10 lg:w-24 lg:h-8 border border-gray-300 mb-12">
+              <div
+                class="flex w-1/2 h-10 lg:w-24 lg:h-8 border border-gray-300 mb-12"
+              >
                 <button class="bg-white flex-1" type="button">-</button>
                 <button class="bg-gray-100 flex-1" type="button">01</button>
                 <button class="bg-white flex-1" type="button">+</button>
@@ -114,16 +187,30 @@
       <section>
         <div class="container mx-auto mt-12">
           <div class="flex flex-col mx-4 lg:mx-0">
-            <h2 class="text-4xl lg:text-5xl font-medium mb-8">Chair to live with</h2>
-            <div class="flex flex-col lg:flex-row gap-4 lg:gap-0 lg:bg-red-700" style="min-height: 500px; max-height: auto;">
-              <div class="flex-1" >
-                <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
+            <h2 class="text-4xl lg:text-5xl font-medium mb-8">
+              Chair to live with
+            </h2>
+            <div
+              class="flex flex-col lg:flex-row gap-4 lg:gap-0 lg:bg-red-700"
+              style="min-height: 500px; max-height: auto;"
+            >
+              <div class="flex-1">
+                <img
+                  src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                  alt="chair image"
+                />
               </div>
               <div class="flex-1">
-                <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
+                <img
+                  src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                  alt="chair image"
+                />
               </div>
               <div class="flex-1">
-                <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
+                <img
+                  src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                  alt="chair image"
+                />
               </div>
             </div>
           </div>
@@ -131,64 +218,140 @@
       </section>
 
       <section>
-        <div class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 ">
+        <div
+          class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 "
+        >
           <div class="flex-1">
-            <h3 class="text-3xl lg:text-5xl font-medium lg:pr-4 w-11/12">Some heading text goes here1</h3>
+            <h3 class="text-3xl lg:text-5xl font-medium lg:pr-4 w-11/12">
+              Some heading text goes here1
+            </h3>
           </div>
           <div class="flex-1 mt-4 lg:mt-0 :w-full">
-            <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image unsplash" />
+            <img
+              src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+              alt="chair image unsplash"
+            />
           </div>
         </div>
       </section>
 
       <section>
-        <div class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 ">
+        <div
+          class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 "
+        >
           <div class="flex-1 order-2 lg:order-1 mt-4 lg:mt-0 w-full">
-            <img src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
+            <img
+              src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+              alt="chair image"
+            />
           </div>
           <div class="flex-1 order-1 lg:order-2">
-            <h3 class="text-3xl lg:text-5xl font-medium lg:pr-4 lg:pl-4 w-11/12">Some heading text goes here</h3>
+            <h3
+              class="text-3xl lg:text-5xl font-medium lg:pr-4 lg:pl-4 w-11/12"
+            >
+              Some heading text goes here
+            </h3>
           </div>
         </div>
       </section>
       <section>
-        <div class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 ">
+        <div
+          class="container flex flex-col lg:flex-row px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 "
+        >
           <div class="flex-1 w-11/12 lg:w-full">
-            <h3 class="text-3xl lg:text-5xl font-medium lg:pr-4 w-11/12">Some heading text goes here</h3>
+            <h3 class="text-3xl lg:text-5xl font-medium lg:pr-4 w-11/12">
+              Some heading text goes here
+            </h3>
           </div>
           <div class="flex-1 mt-4 lg:mt-0 w-11/12 lg:w-full">
-            <img 
-            class=""
-            src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
+            <img
+              class=""
+              src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+              alt="chair image"
+            />
           </div>
         </div>
       </section>
 
       <section>
-        <div class="container flex flex-col px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 ">
+        <div
+          class="container flex flex-col px-4 lg:px-0 lg:mx-auto mt-12 lg:mt-24 "
+        >
           <div class="">
-            <h3 class="text-3xl lg:text-5xl font-medium lg:mb-6 w-11/12 ">Some heading text goes here</h3>
+            <h3 class="text-3xl lg:text-5xl font-medium lg:mb-6 w-11/12 ">
+              Some heading text goes here
+            </h3>
           </div>
           <div class="mt-4 lg:mt-0 w-full">
-            <img style="height: 250px; width: 100%; object-fit: cover;" src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="chair image" />
+            <img
+              style="height: 250px; width: 100%; object-fit: cover;"
+              src="https://images.unsplash.com/photo-1571283600721-e0e5d851fd17?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+              alt="chair image"
+            />
           </div>
         </div>
       </section>
-
 
       <section>
         <div class="container lg:mx-auto text-center mt-20 lg:mt-24">
-          <div class="flex flex-col lg:flex-row mx-4 lg:mx-12 border border-gray-300 rounded-md py-6">
+          <div
+            class="flex flex-col lg:flex-row mx-4 lg:mx-12 border border-gray-300 rounded-md py-6"
+          >
             <div class="flex-1 mb-10 lg:mb-0">
-              <div>icon</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-truck"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                  />
+                </svg>
+              </div>
               <p class="font-light">Fast Delivery</p>
             </div>
             <div class="flex-1 mb-10 lg:mb-0">
-              <div>icon</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-shield"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z"
+                  />
+                </svg>
+              </div>
               <p class="font-light">24 Months Guarantee</p>
             </div>
             <div class="flex-1 mb-3 lg:mb-0">
-              <div>icon</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-counterclockwise"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"
+                  />
+                  <path
+                    d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"
+                  />
+                </svg>
+              </div>
               <p class="font-light">Return Policy</p>
             </div>
           </div>
@@ -196,22 +359,32 @@
       </section>
 
       <section>
-        <div class="container flex flex-col lg:flex-row mx-auto border-t-2 border-b-2 border-gray-300 py-10 px-6 mt-24 text-gray-500">
+        <div
+          class="container flex flex-col lg:flex-row mx-auto border-t-2 border-b-2 border-gray-300 py-10 px-6 mt-24 text-gray-500"
+        >
           <div class="flex-1 mb-6 lg:mb-0">
-            <h6 class="text-xl text-gray-600 font-semibold uppercase">Technical Specifications</h6>
+            <h6 class="text-xl text-gray-600 font-semibold uppercase">
+              Technical Specifications
+            </h6>
           </div>
           <div class="flex-1">
             <div class="flex flex-col">
               <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Dimensions</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                  Dimensions
+                </h5>
                 <p>492 x 389 x H 823mm</p>
               </div>
               <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Material</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                  Material
+                </h5>
                 <p>Solid beech, leather, Kvadrat fabric</p>
               </div>
               <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Paint</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                  Paint
+                </h5>
                 <p>Polyurethane</p>
               </div>
             </div>
@@ -219,15 +392,21 @@
           <div class="flex-1">
             <div class="flex flex-col">
               <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Assembly</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                  Assembly
+                </h5>
                 <p>Partial Assembly Required</p>
               </div>
               <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Wood</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                  Wood
+                </h5>
                 <p>Solid Ash</p>
               </div>
               <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">Leather</h5>
+                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                  Leather
+                </h5>
                 <p>Genuine Leather</p>
               </div>
             </div>
@@ -236,23 +415,40 @@
       </section>
 
       <section>
-        <div class="container flex flex-col lg:flex-row mx-auto mt-12 lg:mt-24 px-4 lg:px-0">
+        <div
+          class="container flex flex-col lg:flex-row mx-auto mt-12 lg:mt-24 px-4 lg:px-0"
+        >
           <div class="flex-1 mb-10 lg:mb-0">
             <h4 class="text-2xl font-medium ">Furniture to live with</h4>
           </div>
           <div class="">
-            <button type="button" class="w-full lg:w-auto py-3 px-7 bg-yellow-400 hover:bg-yellow-500">Buy Now</button>
+            <button
+              type="button"
+              class="w-full lg:w-auto py-3 px-7 bg-yellow-400 hover:bg-yellow-500"
+            >
+              Buy Now
+            </button>
           </div>
         </div>
       </section>
-      
+
       <section class="bg-gray-100 lg:bg-white">
-        <div class="container lg:bg-gray-100 mx-auto mt-16 lg:mt-24 pt-10 pb-16 lg:pt-24 lg:pb-32 px-4 lg:px-36">
+        <div
+          class="container lg:bg-gray-100 mx-auto mt-16 lg:mt-24 pt-10 pb-16 lg:pt-24 lg:pb-32 px-4 lg:px-36"
+        >
           <p class="mb-3">Subscribe to our newsletter</p>
           <div class="bg-gray-500 ">
             <form class="flex w-full">
-              <input type="email" placeholder="Type your email here" class="p-3 flex-1" />
-              <button class="py-3 px-7 bg-gray-500 hover:bg-gray-600 text-white">Subscribe</button>
+              <input
+                type="email"
+                placeholder="Type your email here"
+                class="p-3 flex-1"
+              />
+              <button
+                class="py-3 px-7 bg-gray-500 hover:bg-gray-600 text-white"
+              >
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
@@ -260,13 +456,16 @@
     </main>
 
     <footer class="">
-      <div class="container flex flex-col lg:flex-row px-4 lg:px-0 md:mx-auto pt-14 lg:pt-24 pb-16 lg:pb-28 md:px-4">
+      <div
+        class="container flex flex-col lg:flex-row px-4 lg:px-0 md:mx-auto pt-14 lg:pt-24 pb-16 lg:pb-28 md:px-4"
+      >
         <div class="flex-1 order-2 lg:order-1">
           <h5 class="font-serif text-3xl leading-loose">Naive Chaise</h5>
           <p class="w-11/12">
             lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet dolor sit amet lorem ipsum amet dolor sit amet lorem 
-            ipsum amet dolor sit amet lorem ipsum dolor sit amet ipsum dolor sit amet.
+            dolor sit amet dolor sit amet lorem ipsum amet dolor sit amet lorem
+            ipsum amet dolor sit amet lorem ipsum dolor sit amet ipsum dolor sit
+            amet.
           </p>
         </div>
         <div class="flex-1 order-1 lg:order-2 mt-0 lg:mt-5 mb-6 lg:mb-0">
@@ -276,7 +475,11 @@
             <li>t</li>
             <li>i</li>
             <li>yt</li>
-            <li>e</li>
+            <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+</svg>
+            </li>
           </ol>
         </div>
       </div>
