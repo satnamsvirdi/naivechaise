@@ -9,17 +9,10 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-    <style>
-      feather {
-        width: 24px;
-        height: 24px;
-        stroke: red;
-        stroke-width: 2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-      }
-    </style>
+    
+    <script>
+      feather.replace({stroke: red})
+    </script>
     
     
   </head>
@@ -45,15 +38,15 @@
               class="hover:text-gray-900"
             >
               <a href="#" class="block py-6 px-4">
-                <svg class="feather">
-                  <use xlink:href="path/to/dist/feather-sprite.svg#circle"/>
-                </svg>
+                <img src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fsearch.svg?v=1607940039962" />
               </a>
             </li>
             <li
               class="hover:text-gray-900"
             >
-              <a href="#" class="block py-6 px-4">p</a>
+              <a href="#" class="block py-6 px-4">
+              <i data-feather="circle"></i>
+              </a>
             </li>
             <li
               class="hover:text-gray-900"
