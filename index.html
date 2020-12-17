@@ -8,7 +8,7 @@
     <title>Naive Chaise | Naive Low Chair Shop</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style.css" defer />
   </head>
   <body>
     <header class="min-w-full bg-white text-gray-400">
@@ -327,9 +327,9 @@
             <div class="flex flex-col lg:flex-row gap-4 lg:gap-4">
               <div class="flex-1">
                 <img
-                  class="w-full"
-                  loading="lazy"
-                  src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-1.webp?v=1608129447334"
+                  class="w-full lazyload"
+                  
+                  data-src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-1.webp?v=1608129447334"
                   alt="chair image"
                 />
               </div>
@@ -718,5 +718,7 @@
         </div>
       </div>
     </footer>
+    
+    <script src="/lazysizes.min.js" async ></script>
   </body>
 </html>
