@@ -1,7 +1,11 @@
 const bagBtn = document.querySelector('#bag');
+const closeBag = document.querySelector('#close-bag');
+const aside = document.querySelector('aside');
 
-bagBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  
-  alert("hello, I am your bag")
-})
+const toggleBag = (e) => {
+  e.preventDefault()
+  aside.classList.toggle("hidden")
+}
+
+bagBtn.addEventListener('click', toggleBag)
+closeBag.addEventListener('click', toggleBag)
