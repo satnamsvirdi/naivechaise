@@ -1,0 +1,17 @@
+{
+  "name": "naive-chaise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build:css": "postcss custom.css -o dist/tailwind.css"
+  },
+  "author": "Satnam S Virdi",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2",
+    "watch": "^1.0.2"
+  }
+}

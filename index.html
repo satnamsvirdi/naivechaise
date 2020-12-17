@@ -1,737 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Naive Chaise | Naive Low Chair Shop</title>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" defer />
-    <link rel="stylesheet" href="/custom-styles.css" defer />
-  </head>
-  <body>
-    <header class="min-w-full bg-white text-gray-400">
-      <div class="container flex gap-4 mx-auto">
-        <div class="flex-1 hidden md:block lg-order-1 p-0">
-          <ol class="flex">
-            <li class="hover:text-gray-900">
-              <a href="#" class="block p-6">About</a>
-            </li>
-            <li class="hover:text-gray-900">
-              <a href="#" class="block p-6">Contact</a>
-            </li>
-          </ol>
-        </div>
-        <div
-          class="flex-1 order-1 lg:order-2 text-left lg:text-center self-center text-xl sm:text-2xl font-serif text-gray-800"
-        >
-          <a
-            href="#"
-            class="inline-block px-2 sm:px-6 py-2 sm:py-5 lg:p-0 lg:inline-block"
-            >Naive Chaise</a
-          >
-        </div>
-        <div class="flex-1 hidden lg:block lg:order-3 text-right /self-center">
-          <ol class="flex justify-end">
-            <li class="relative">
-              <a href="#" class="block py-6 px-4 hover:text-gray-900" id="person-dropdown-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-person"
-                  viewbox="0 0 14 14"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
-                  />
-                </svg>
-              </a>
-              
-              <div class="hidden absolute -bottom-18 right-0 /my-1 bg-white shadow-xl border border-gray-200" id="person-dropdown">
-                <ol class="w-36 text-left pb-2">
-                  <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Account</li>
-                  <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Orders</li>
-                  <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Log Out</li>
-                </ol>
-              </div>
-              
-            </li>
+  <title>Naive Chaise | Naive Low Chair Shop</title>
 
-            <li class="hover:text-gray-900 relative">
-              <a href="#" class="block py-6 px-4" id="bag">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-bag"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z"
-                  />
-                </svg>
-              </a>
-              <span class="rounded-full bg-red-400 w-2 h-2 box-content border-2 border-white absolute top-6 right-3 hidden"></span>
-            </li>
-          </ol>
-        </div>
-        <div class="order-4 lg:hidden">
-          <button type="button" class="p-6 hover:text-gray-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              class="bi bi-list"
-              viewbox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </button>
-        </div>
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/dist/tailwind.css" defer>
+  <link rel="stylesheet" href="/custom-styles.css" defer />
+</head>
+
+<body>
+  <header class="min-w-full bg-white text-gray-400">
+    <div class="container flex gap-4 mx-auto">
+      <div class="flex-1 hidden md:block lg-order-1 p-0">
+        <ol class="flex">
+          <li class="hover:text-gray-900">
+            <a href="#" class="block p-6">About</a>
+          </li>
+          <li class="hover:text-gray-900">
+            <a href="#" class="block p-6">Contact</a>
+          </li>
+        </ol>
       </div>
-      <div class="container bg-red-500 p-6 hidden">TODO://menu items</div>
-    </header>
-
-    
-    <aside
-      class="hidden fixed absolut right-0 top-0 bottom-0 h-full w-2/6 bg-white text-gray-800 p-6"
-    >
       <div
-        class="absolute right-8 top-6 "
-      >
-        <button class="w-8 h-8 flex place-content-center rounded-full text-center bg-red-100 text-red-800" type="button" id="close-bag">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            class="bi bi-x self-center"
-            viewbox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-            />
+        class="flex-1 order-1 lg:order-2 text-left lg:text-center self-center text-xl sm:text-2xl font-serif text-gray-800">
+        <a href="#" class="inline-block px-2 sm:px-6 py-2 sm:py-5 lg:p-0 lg:inline-block">Naive Chaise</a>
+      </div>
+      <div class="flex-1 hidden lg:block lg:order-3 text-right /self-center">
+        <ol class="flex justify-end">
+          <li class="relative">
+            <a href="#" class="block py-6 px-4 hover:text-gray-900" id="person-dropdown-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
+                viewbox="0 0 14 14">
+                <path fill-rule="evenodd"
+                  d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              </svg>
+            </a>
+
+            <div class="hidden absolute -bottom-18 right-0 /my-1 bg-white shadow-xl border border-gray-200"
+              id="person-dropdown">
+              <ol class="w-36 text-left pb-2">
+                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Account</li>
+                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Orders</li>
+                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Log Out</li>
+              </ol>
+            </div>
+
+          </li>
+
+          <li class="hover:text-gray-900 relative">
+            <a href="#" class="block py-6 px-4" id="bag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag"
+                viewbox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 1a2.5 2.5 0 0 0-2.5 2.5V4h5v-.5A2.5 2.5 0 0 0 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5H2z" />
+              </svg>
+            </a>
+            <span
+              class="rounded-full bg-red-400 w-2 h-2 box-content border-2 border-white absolute top-6 right-3 hidden"></span>
+          </li>
+        </ol>
+      </div>
+      <div class="order-4 lg:hidden">
+        <button type="button" class="p-6 hover:text-gray-900">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+            viewbox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
           </svg>
         </button>
       </div>
-      <!--   show some headers or tabs   -->
-      <div class="mb-10">
-        <h3 class="text-xl font-medium">Your Bag</h3>
-        <p>Guest</p>
+    </div>
+    <div class="container bg-red-500 p-6 hidden">TODO://menu items</div>
+  </header>
+
+
+  <aside class="hidden fixed absolut right-0 top-0 bottom-0 h-full w-2/6 bg-white text-gray-800 p-6">
+    <div class="absolute right-8 top-6 ">
+      <button class="w-8 h-8 flex place-content-center rounded-full text-center bg-red-100 text-red-800" type="button"
+        id="close-bag">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x self-center"
+          viewbox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </button>
+    </div>
+    <!--   show some headers or tabs   -->
+    <div class="mb-10">
+      <h3 class="text-xl font-medium">Your Bag</h3>
+      <p>Guest</p>
+    </div>
+
+    <div class="">
+      <div class="px-4 py-6 bg-gray-100 rounded mb-10 flex justify-between text-xl font-medium">
+        <p class="block">Naive Low Chair</p>
+        <p class="block">x2</p>
       </div>
 
       <div class="">
-        <div
-          class="px-4 py-6 bg-gray-100 rounded mb-10 flex justify-between text-xl font-medium"
-        >
-          <p class="block">Naive Low Chair</p>
-          <p class="block">x2</p>
+        <form class="">
+          <div class="mb-6">
+            <label class="uppercase text-sm font-medium block mb-2 text-gray-600" for="credit-card">Credit Card
+              Number</label>
+            <input class="p-3 w-full bg-gray-100" type="number" placeholder="----/----/----" id="credit-card" />
+          </div>
+          <div class="mb-6">
+            <label class="uppercase text-sm font-medium block mb-2 text-gray-600" for="cvv">CVV</label>
+            <input class="p-3 w-full bg-gray-100" type="number" placeholder="123" id="cvv" />
+          </div>
+
+          <button type="submit" class="py-4 w-full bg-yellow-400 hover:bg-yellow-500 hover:text-white">
+            <strong>Pay $1398/-</strong>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!--     then show bag items (if any) and a checkout button   -->
+  </aside>
+
+
+  <main class="bg-white">
+    <!--    Hero Section    -->
+    <section class="bg-gray-100 mb-12 lg:mb-28">
+      <div class="container flex flex-col lg:flex-row mx-auto">
+        <div class="flex-1">
+          <div class="flex justify-center h-full w-full pt-12 pb-0 lg:py-24 relative">
+            <img class=""
+              src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fhero-lg-s-h.webp?v=1608129909036"
+              alt="naive low chair photo" />
+            <span
+              class="uppercase bg-yellow-200 rounded-full p-6 h-20 w-20 absolute right-14 top-16 lg:right-40 lg:top-32 flex place-items-center">
+              <strong>10% off</strong>
+            </span>
+          </div>
         </div>
+        <div class="flex-1">
+          <div class="py-10 px-4 lg:pt-24 lg:pb-14 lg:px-0">
+            <div class="m-0 p-0 mb-6 border-b-2 border-gray-200 lg:mr-36">
+              <h2 class="font-semibold text-4xl ppercase leading-relaxed m-0 p-0 mb-2">
+                Naive Low Chair
+              </h2>
+              <p class="text-xs font-regular m-0 p-0 mb-4">
+                By <span class="uppercase font-medium">EMKO Studio</span>
+              </p>
+              <p class="text-gray-600 text-sm mb-6">
+                Halfway between the comfortable armchair and the chair, this
+                handmade design seat in Lithuania elegantly mixes leather,
+                wood and Danish fabric Kvadrat. A seat that will bring design
+                to your home!
+              </p>
+              <p class="font-regular text-2xl m-0 p-0 mb-4 lg:mb-6">
+                <small>$</small>799
+              </p>
+            </div>
 
+            <div class="mb-10">
+              <p class="text-xs uppercase font-bold mb-4">
+                Colors
+              </p>
+              <ul class="flex flex-wrap gap-4 lg:gap-2">
+                <button href="#" class="border border-yellow-800 rounded-full p-1 -m-1 ml-0.5">
+                  <li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-red-800"></li>
+                </button>
+                <button href="#" class="rounded-full p-1 -m-1">
+                  <li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-green-800"></li>
+                </button>
+                <button href="#" class="rounded-full p-1 -m-1">
+                  <li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-800"></li>
+                </button>
+                <button href="#" class="rounded-full p-1 -m-1">
+                  <li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-800"></li>
+                </button>
+                <button href="#" class="rounded-full p-1 -m-1">
+                  <li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-purple-800"></li>
+                </button>
+                <button href="#" class="rounded-full p-1 -m-1">
+                  <li class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-yellow-800"></li>
+                </button>
+              </ul>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6 sm:gap-4 w-full lg:w-3/5 mb-10">
+              <p class="flex-1 sm:hidden text-xs uppercase font-bold mb-0">
+                Quantity
+              </p>
+              <div class="flex-1 flex h-100 border border-gray-300">
+                <button class="bg-white flex-1 block flex place-content-center py-3" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-dash self-center" viewbox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                  </svg>
+                </button>
+
+                <input type="number" class="bg-gray-200 w-12 text-center pl-2 flex-1" value="1" />
+
+                <button class="bg-white flex-1 flex place-content-center" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-plus self-center" viewbox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex-1">
+                <button class="w-full lg:w-auto py-3 px-12 bg-yellow-400 hover:bg-yellow-500" href="#">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- tri-image portraits -->
+    <section class="mb-8 lg:mb-28">
+      <div class="container mx-auto mt-12 lg:px-36">
+        <div class="flex flex-col mx-4 lg:mx-0">
+          <h2 class="text-4xl lg:text-5xl font-medium mb-8">
+            Chair to live with
+          </h2>
+          <div class="flex flex-col lg:flex-row gap-4 lg:gap-4">
+            <div class="flex-1">
+              <img class="w-full "
+                src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-1.webp?v=1608129447334"
+                alt="chair image" />
+            </div>
+            <div class="flex-1">
+              <img class="w-full" loading="lazy"
+                src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-2.webp?v=1608129456411"
+                alt="chair image" />
+            </div>
+            <div class="flex-1">
+              <img class="w-full" loading="lazy"
+                src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-3.webp?v=1608129461243"
+                alt="chair image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    Offset Posters    -->
+    <section class="overflow-hidden mb-4 lg:mb-28">
+      <div class="container flex flex-col lg:flex-row px-4 md:mx-auto mt-12 lg:mt-24 lg:px-36">
+        <div class="flex-1">
+          <h3 class="text-3xl lg:text-4xl font-medium w-11/12">
+            Super comfortable angled seat and curved back
+          </h3>
+        </div>
+        <div class="flex-1 mt-4 lg:mt-0 relative" style="min-height: 100pt; height: 350pt; max-height: 700pt;">
+          <img style="" class="w-full lg:absolute lg:top-20 lg:left-32 lg:transform lg:scale-150"
+            src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-1.webp?v=1608129420171"
+            alt="chair image unsplash" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="overflow-hidden mb-4 lg:mb-28">
+      <div class="container flex flex-col lg:flex-row px-4 md:mx-auto mt-12 lg:mt-24 lg:px-36">
+        <div class="flex-1 order-2 lg:order-1 mt-4 lg:mt-0 w-full lg:relative"
+          style="min-height: 100pt; height: 350pt; max-height: 700pt;">
+          <img style="" class="w-full lg:absolute lg:top-20 lg:right-32 lg:transform lg:scale-150"
+            src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-2.webp?v=1608129422594"
+            loading="lazy" />
+        </div>
+        <div class="flex-1 order-1 lg:order-2">
+          <h3 class="text-2xl lg:text-4xl font-medium lg:pr-4 lg:pl-6 w-11/12">
+            Sturdy<br />and graceful
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="overflow-hidden mb-84 lg:mb-40">
+      <div class="container flex flex-col lg:flex-row px-4 md:mx-auto mt-12 lg:mt-24 lg:px-36">
+        <div class="flex-1 w-11/12 lg:w-full">
+          <h3 class="text-2xl lg:text-4xl font-medium lg:pr-4 w-11/12">
+            Lithuanian design aesthetics
+          </h3>
+        </div>
+        <div class="flex-1 mt-4 lg:mt-0 w-full relative" style="min-height: 100pt; height: 350pt; max-height: 700pt;">
+          <img style="" class="w-full lg:absolute lg:top-20 lg:left-32 lg:transform lg:scale-150"
+            src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-3.webp?v=1608129438878"
+            loading="lazy" alt="chair image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16 lg:mb-36">
+      <div class="container flex flex-col px-4 lg:mx-auto mt-12 lg:mt-24 lg:px-36">
         <div class="">
-          <form class="">
-            <div class="mb-6">
-              <label
-                class="uppercase text-sm font-medium block mb-2 text-gray-600"
-                for="credit-card"
-                >Credit Card Number</label
-              >
-              <input
-                class="p-3 w-full bg-gray-100"
-                type="number"
-                placeholder="----/----/----"
-                id="credit-card"
-              />
-            </div>
-            <div class="mb-6">
-              <label
-                class="uppercase text-sm font-medium block mb-2 text-gray-600"
-                for="cvv"
-                >CVV</label
-              >
-              <input
-                class="p-3 w-full bg-gray-100"
-                type="number"
-                placeholder="123"
-                id="cvv"
-              />
-            </div>
+          <h3 class="text-2xl lg:text-4xl font-medium lg:mb-6 w-11/12">
+            Style your space with tradition and charm
+          </h3>
+        </div>
+        <div class="mt-4 lg:mt-0 w-full">
+          <img class="object-cover w-full h-56" style="max-height: 250pt;"
+            src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fw-lg-h.webp?v=1608129457649"
+            loading="lazy" alt="chair image" />
+        </div>
+      </div>
+    </section>
 
-            <button
-              type="submit"
-              class="py-4 w-full bg-yellow-400 hover:bg-yellow-500 hover:text-white"
-            >
-              <strong>Pay $1398/-</strong>
+    <!--    Assurances    -->
+    <section class="mb-16 lg:mb-36">
+      <div class="container lg:mx-auto text-center mt-20 lg:mt-24 lg:px-36">
+        <div class="flex flex-col lg:flex-row border border-gray-300 rounded-md mx-4 lg:mx-0 py-6">
+          <div class="flex-1 justify-center mb-10 lg:mb-0">
+            <div class="flex justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-truck"
+                viewbox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+              </svg>
+            </div>
+            <p class="font-light">Fast Delivery</p>
+          </div>
+          <div class="flex-1 mb-10 lg:mb-0">
+            <div class="flex justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-shield"
+                viewbox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z" />
+              </svg>
+            </div>
+            <p class="font-light">24 Months Guarantee</p>
+          </div>
+          <div class="flex-1 mb-3 lg:mb-0">
+            <div class="flex justify-center mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                class="bi bi-arrow-counterclockwise" viewbox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" />
+                <path
+                  d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" />
+              </svg>
+            </div>
+            <p class="font-light">Return Policy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    Technical Specs    -->
+    <section class="">
+      <div
+        class="container flex flex-col lg:flex-row mx-auto border-t-2 border-b-2 border-gray-300 py-10 lg:py-20 px-6 mt-24 text-gray-500 lg:px-36">
+        <div class="flex-1 mb-6 lg:mb-0">
+          <h6 class="text-xl text-gray-600 font-semibold uppercase break-all">
+            Technical Specifications
+          </h6>
+        </div>
+        <div class="flex-1">
+          <div class="flex flex-col">
+            <div class="mb-6">
+              <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                Dimensions
+              </h5>
+              <p>492 x 389 x H 823mm</p>
+            </div>
+            <div class="mb-6">
+              <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                Material
+              </h5>
+              <p>Solid beech, leather, Kvadrat fabric</p>
+            </div>
+            <div class="mb-6">
+              <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                Paint
+              </h5>
+              <p>Polyurethane</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="flex flex-col">
+            <div class="mb-6">
+              <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                Assembly
+              </h5>
+              <p>Partial Assembly Required</p>
+            </div>
+            <div class="mb-6">
+              <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                Wood
+              </h5>
+              <p>Solid Ash</p>
+            </div>
+            <div class="mb-6">
+              <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
+                Leather
+              </h5>
+              <p>Genuine Leather</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    Buy Section    -->
+    <section class="">
+      <div class="container flex flex-col lg:flex-row mx-auto mt-6 lg:mt-10 px-4 lg:px-36 py-10">
+        <div class="flex-1 mb-10 lg:mb-0">
+          <h4 class="text-2xl font-medium">
+            Furniture that made to stand out
+          </h4>
+        </div>
+        <div class="">
+          <button type="button" class="w-full lg:w-auto py-3 px-7 bg-yellow-400 hover:bg-yellow-500">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--    Newsletter    -->
+    <section class="bg-gray-100">
+      <div class="container mx-auto mt-8 lg:mt-10 pt-10 pb-16 lg:pt-24 lg:pb-32 px-4 lg:px-36">
+        <p class="mb-3">Subscribe to our newsletter</p>
+        <div class="bg-gray-500">
+          <form class="flex flex-col sm:flex-row w-full">
+            <input type="email" id="newsletter" placeholder="Type your email here"
+              class="flex-1 p-3 ring ring-inset ring-gray-300 focus:ring-blue-300 focus:outline-none" />
+            <button class="py-3 px-7 bg-gray-500 hover:bg-gray-600 text-white">
+              Subscribe
             </button>
           </form>
         </div>
       </div>
-      <!--     then show bag items (if any) and a checkout button   -->
-    </aside>
-     
+    </section>
+  </main>
 
-    <main class="bg-white">
-      <!--    Hero Section    -->
-      <section class="bg-gray-100 mb-12 lg:mb-28">
-        <div class="container flex flex-col lg:flex-row mx-auto">
-          <div class="flex-1">
-            <div
-              class="flex justify-center h-full w-full pt-12 pb-0 lg:py-24 relative"
-            >
-              <img
-                class=""
-                src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fhero-lg-s-h.webp?v=1608129909036"
-                alt="naive low chair photo"
-              />
-              <span
-                class="uppercase bg-yellow-200 rounded-full p-6 h-20 w-20 absolute right-14 top-16 lg:right-40 lg:top-32 flex place-items-center"
-              >
-                <strong>10% off</strong>
-              </span>
-            </div>
-          </div>
-          <div class="flex-1">
-            <div class="py-10 px-4 lg:pt-24 lg:pb-14 lg:px-0">
-              <div class="m-0 p-0 mb-6 border-b-2 border-gray-200 lg:mr-36">
-                <h2
-                  class="font-semibold text-4xl ppercase leading-relaxed m-0 p-0 mb-2"
-                >
-                  Naive Low Chair
-                </h2>
-                <p class="text-xs font-regular m-0 p-0 mb-4">
-                  By <span class="uppercase font-medium">EMKO Studio</span>
-                </p>
-                <p class="text-gray-600 text-sm mb-6">
-                  Halfway between the comfortable armchair and the chair, this
-                  handmade design seat in Lithuania elegantly mixes leather,
-                  wood and Danish fabric Kvadrat. A seat that will bring design
-                  to your home!
-                </p>
-                <p class="font-regular text-2xl m-0 p-0 mb-4 lg:mb-6">
-                  <small>$</small>799
-                </p>
-              </div>
-
-              <div class="mb-10">
-                <p class="text-xs uppercase font-bold mb-4">
-                  Colors
-                </p>
-                <ul class="flex flex-wrap gap-4 lg:gap-2">
-                  <button
-                    href="#"
-                    class="border border-yellow-800 rounded-full p-1 -m-1 ml-0.5"
-                  >
-                    <li
-                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-red-800"
-                    ></li>
-                  </button>
-                  <button href="#" class="rounded-full p-1 -m-1">
-                    <li
-                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-green-800"
-                    ></li>
-                  </button>
-                  <button href="#" class="rounded-full p-1 -m-1">
-                    <li
-                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-800"
-                    ></li>
-                  </button>
-                  <button href="#" class="rounded-full p-1 -m-1">
-                    <li
-                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-blue-800"
-                    ></li>
-                  </button>
-                  <button href="#" class="rounded-full p-1 -m-1">
-                    <li
-                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-purple-800"
-                    ></li>
-                  </button>
-                  <button href="#" class="rounded-full p-1 -m-1">
-                    <li
-                      class="w-6 h-6 lg:w-4 lg:h-4 rounded-full bg-yellow-800"
-                    ></li>
-                  </button>
-                </ul>
-              </div>
-
-              <div
-                class="flex flex-col sm:flex-row gap-6 sm:gap-4 w-full lg:w-3/5 mb-10"
-              >
-                <p class="flex-1 sm:hidden text-xs uppercase font-bold mb-0">
-                  Quantity
-                </p>
-                <div class="flex-1 flex h-100 border border-gray-300">
-                  <button
-                    class="bg-white flex-1 block flex place-content-center py-3"
-                    type="button"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      class="bi bi-dash self-center"
-                      viewbox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
-                      />
-                    </svg>
-                  </button>
-
-                  <input
-                    type="number"
-                    class="bg-gray-200 w-12 text-center pl-2 flex-1"
-                    value="1"
-                  />
-
-                  <button
-                    class="bg-white flex-1 flex place-content-center"
-                    type="button"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      class="bi bi-plus self-center"
-                      viewbox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div class="flex-1">
-                  <button
-                    class="w-full lg:w-auto py-3 px-12 bg-yellow-400 hover:bg-yellow-500"
-                    href="#"
-                  >
-                    Buy Now
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- tri-image portraits -->
-      <section class="mb-8 lg:mb-28">
-        <div class="container mx-auto mt-12 lg:px-36">
-          <div class="flex flex-col mx-4 lg:mx-0">
-            <h2 class="text-4xl lg:text-5xl font-medium mb-8">
-              Chair to live with
-            </h2>
-            <div class="flex flex-col lg:flex-row gap-4 lg:gap-4">
-              <div class="flex-1">
-                <img
-                  class="w-full "
-                  src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-1.webp?v=1608129447334"
-                  alt="chair image"
-                />
-              </div>
-              <div class="flex-1">
-                <img
-                  class="w-full"
-                  loading="lazy"
-                  src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-2.webp?v=1608129456411"
-                  alt="chair image"
-                />
-              </div>
-              <div class="flex-1">
-                <img
-                  class="w-full"
-                  loading="lazy"
-                  src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-3.webp?v=1608129461243"
-                  alt="chair image"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--    Offset Posters    -->
-      <section class="overflow-hidden mb-4 lg:mb-28">
-        <div
-          class="container flex flex-col lg:flex-row px-4 md:mx-auto mt-12 lg:mt-24 lg:px-36"
-        >
-          <div class="flex-1">
-            <h3 class="text-3xl lg:text-4xl font-medium w-11/12">
-              Super comfortable angled seat and curved back
-            </h3>
-          </div>
-          <div
-            class="flex-1 mt-4 lg:mt-0 relative"
-            style="min-height: 100pt; height: 350pt; max-height: 700pt;"
-          >
-            <img
-              style=""
-              class="w-full lg:absolute lg:top-20 lg:left-32 lg:transform lg:scale-150"
-              src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-1.webp?v=1608129420171"
-              alt="chair image unsplash"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="overflow-hidden mb-4 lg:mb-28">
-        <div
-          class="container flex flex-col lg:flex-row px-4 md:mx-auto mt-12 lg:mt-24 lg:px-36"
-        >
-          <div
-            class="flex-1 order-2 lg:order-1 mt-4 lg:mt-0 w-full lg:relative"
-            style="min-height: 100pt; height: 350pt; max-height: 700pt;"
-          >
-            <img
-              style=""
-              class="w-full lg:absolute lg:top-20 lg:right-32 lg:transform lg:scale-150"
-              src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-2.webp?v=1608129422594"
-              loading="lazy"
-            />
-          </div>
-          <div class="flex-1 order-1 lg:order-2">
-            <h3
-              class="text-2xl lg:text-4xl font-medium lg:pr-4 lg:pl-6 w-11/12"
-            >
-              Sturdy<br />and graceful
-            </h3>
-          </div>
-        </div>
-      </section>
-
-      <section class="overflow-hidden mb-84 lg:mb-40">
-        <div
-          class="container flex flex-col lg:flex-row px-4 md:mx-auto mt-12 lg:mt-24 lg:px-36"
-        >
-          <div class="flex-1 w-11/12 lg:w-full">
-            <h3 class="text-2xl lg:text-4xl font-medium lg:pr-4 w-11/12">
-              Lithuanian design aesthetics
-            </h3>
-          </div>
-          <div
-            class="flex-1 mt-4 lg:mt-0 w-full relative"
-            style="min-height: 100pt; height: 350pt; max-height: 700pt;"
-          >
-            <img
-              style=""
-              class="w-full lg:absolute lg:top-20 lg:left-32 lg:transform lg:scale-150"
-              src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-3.webp?v=1608129438878"
-              loading="lazy"
-              alt="chair image"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="mb-16 lg:mb-36">
-        <div
-          class="container flex flex-col px-4 lg:mx-auto mt-12 lg:mt-24 lg:px-36"
-        >
-          <div class="">
-            <h3 class="text-2xl lg:text-4xl font-medium lg:mb-6 w-11/12">
-              Style your space with tradition and charm
-            </h3>
-          </div>
-          <div class="mt-4 lg:mt-0 w-full">
-            <img
-              class="object-cover w-full h-56"
-              style="max-height: 250pt;"
-              src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fw-lg-h.webp?v=1608129457649"
-              loading="lazy"
-              alt="chair image"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!--    Assurances    -->
-      <section class="mb-16 lg:mb-36">
-        <div class="container lg:mx-auto text-center mt-20 lg:mt-24 lg:px-36">
-          <div
-            class="flex flex-col lg:flex-row border border-gray-300 rounded-md mx-4 lg:mx-0 py-6"
-          >
-            <div class="flex-1 justify-center mb-10 lg:mb-0">
-              <div class="flex justify-center mb-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="currentColor"
-                  class="bi bi-truck"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
-                  />
-                </svg>
-              </div>
-              <p class="font-light">Fast Delivery</p>
-            </div>
-            <div class="flex-1 mb-10 lg:mb-0">
-              <div class="flex justify-center mb-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="currentColor"
-                  class="bi bi-shield"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z"
-                  />
-                </svg>
-              </div>
-              <p class="font-light">24 Months Guarantee</p>
-            </div>
-            <div class="flex-1 mb-3 lg:mb-0">
-              <div class="flex justify-center mb-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  fill="currentColor"
-                  class="bi bi-arrow-counterclockwise"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"
-                  />
-                  <path
-                    d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"
-                  />
-                </svg>
-              </div>
-              <p class="font-light">Return Policy</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--    Technical Specs    -->
-      <section class="">
-        <div
-          class="container flex flex-col lg:flex-row mx-auto border-t-2 border-b-2 border-gray-300 py-10 lg:py-20 px-6 mt-24 text-gray-500 lg:px-36"
-        >
-          <div class="flex-1 mb-6 lg:mb-0">
-            <h6 class="text-xl text-gray-600 font-semibold uppercase break-all">
-              Technical Specifications
-            </h6>
-          </div>
-          <div class="flex-1">
-            <div class="flex flex-col">
-              <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
-                  Dimensions
-                </h5>
-                <p>492 x 389 x H 823mm</p>
-              </div>
-              <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
-                  Material
-                </h5>
-                <p>Solid beech, leather, Kvadrat fabric</p>
-              </div>
-              <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
-                  Paint
-                </h5>
-                <p>Polyurethane</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1">
-            <div class="flex flex-col">
-              <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
-                  Assembly
-                </h5>
-                <p>Partial Assembly Required</p>
-              </div>
-              <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
-                  Wood
-                </h5>
-                <p>Solid Ash</p>
-              </div>
-              <div class="mb-6">
-                <h5 class="text-gray-600 font-medium uppercase text-sm mb-0.5">
-                  Leather
-                </h5>
-                <p>Genuine Leather</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--    Buy Section    -->
-      <section class="">
-        <div
-          class="container flex flex-col lg:flex-row mx-auto mt-6 lg:mt-10 px-4 lg:px-36 py-10"
-        >
-          <div class="flex-1 mb-10 lg:mb-0">
-            <h4 class="text-2xl font-medium">
-              Furniture that made to stand out
-            </h4>
-          </div>
-          <div class="">
-            <button
-              type="button"
-              class="w-full lg:w-auto py-3 px-7 bg-yellow-400 hover:bg-yellow-500"
-            >
-              Buy Now
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!--    Newsletter    -->
-      <section class="bg-gray-100">
-        <div
-          class="container mx-auto mt-8 lg:mt-10 pt-10 pb-16 lg:pt-24 lg:pb-32 px-4 lg:px-36"
-        >
-          <p class="mb-3">Subscribe to our newsletter</p>
-          <div class="bg-gray-500">
-            <form class="flex flex-col sm:flex-row w-full">
-              <input
-                type="email"
-                id="newsletter"
-                placeholder="Type your email here"
-                class="flex-1 p-3 ring ring-inset ring-gray-300 focus:ring-blue-300 focus:outline-none"
-              />
-              <button
-                class="py-3 px-7 bg-gray-500 hover:bg-gray-600 text-white"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="">
-      <div
-        class="container flex flex-col lg:flex-row px-4 lg:px-0 md:mx-auto pt-14 lg:pt-24 pb-16 lg:pb-28 md:px-4 lg:px-36"
-      >
-        <div class="flex-1 order-2 lg:order-1">
-          <h5 class="font-serif text-3xl leading-loose">Naive Chaise</h5>
-          <p class="w-11/12">
-            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-            dolor sit amet dolor sit amet lorem ipsum amet dolor sit amet lorem
-            ipsum amet dolor sit amet lorem ipsum dolor sit amet ipsum dolor sit
-            amet.
-          </p>
-        </div>
-        <div class="flex-1 order-1 lg:order-2 mt-0 lg:mt-5 mb-6 lg:mb-0">
-          <h6 class="uppercase font-medium text-sm mb-4">Connect with us</h6>
-          <ol class="flex flex-wrap gap-4 text-gray-500">
-            <li>
-              <a href="#" class="hover:text-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  class="bi bi-facebook"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  class="bi bi-twitter"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  class="bi bi-instagram"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  class="bi bi-youtube"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
-                  /></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  class="bi bi-envelope"
-                  viewbox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
-                  /></svg
-              ></a>
-            </li>
-          </ol>
-        </div>
+  <footer class="">
+    <div
+      class="container flex flex-col lg:flex-row px-4 lg:px-0 md:mx-auto pt-14 lg:pt-24 pb-16 lg:pb-28 md:px-4 lg:px-36">
+      <div class="flex-1 order-2 lg:order-1">
+        <h5 class="font-serif text-3xl leading-loose">Naive Chaise</h5>
+        <p class="w-11/12">
+          lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+          dolor sit amet dolor sit amet lorem ipsum amet dolor sit amet lorem
+          ipsum amet dolor sit amet lorem ipsum dolor sit amet ipsum dolor sit
+          amet.
+        </p>
       </div>
-    </footer>
-    
-<!--     <script src="/lazysizes.min.js" async ></script> -->
-    <script src="/script.js" defer></script>
-  </body>
+      <div class="flex-1 order-1 lg:order-2 mt-0 lg:mt-5 mb-6 lg:mb-0">
+        <h6 class="uppercase font-medium text-sm mb-4">Connect with us</h6>
+        <ol class="flex flex-wrap gap-4 text-gray-500">
+          <li>
+            <a href="#" class="hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook"
+                viewbox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
+                viewbox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram"
+                viewbox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-youtube"
+                viewbox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                </svg></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope"
+                viewbox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                </svg></a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </footer>
+
+  <!--     <script src="/lazysizes.min.js" async ></script> -->
+  <script src="/script.js" defer></script>
+</body>
+
 </html>
