@@ -1,13 +1,11 @@
-.hide + .hide::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+body.hide > main,
+body.hide > header {
+  filter: blur(10px);
+}
+body.hide {
   height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,.5);
-  filter: blur(50%);
-  z-index: 10;
+  overflow-y: hidden;
+}
+body.hide > aside {
+  z-index: 999;
 }
