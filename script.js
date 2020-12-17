@@ -16,7 +16,7 @@ closeBag.addEventListener('click', toggleBag)
 
 const toggleDropdown = (e) => {
   e.preventDefault();
-  
+  personDropdown.classList.toggle("hidden")
 }
 
-personDropdownBtn.addEventListener('click', toggleDropdown())
+personDropdownBtn.addEventListener('click', toggleDropdown)
