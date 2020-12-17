@@ -2,10 +2,16 @@ body.hide > main,
 body.hide > header {
   filter: blur(10px);
 }
-body.hide {
-  height: 100vh;
-  overflow-y: hidden;
-}
 body.hide > aside {
   z-index: 999;
+}
+
+/* body.hide {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 15px;
+} */
+
+aside {
+  transition: all .3s ease-out;
 }
