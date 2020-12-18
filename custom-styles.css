@@ -11,7 +11,3 @@ body.hide > aside {
   overflow-y: hidden;
   padding-right: 15px;
 } */
-
-aside {
-  transition: all 3s ease-out;
-}
