@@ -2,5 +2,7 @@
 node_modules
 
 # tailwind build
-dist/tailwind.css
+# dist/tailwind.css
 
+# cdn version
+tailwind.css
