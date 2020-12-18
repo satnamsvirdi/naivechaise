@@ -1,8 +1,5 @@
 # node modules
 node_modules
 
-# tailwind build
-# dist/tailwind.css
-
 # cdn version
 tailwind.css

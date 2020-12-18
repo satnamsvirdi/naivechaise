@@ -6,6 +6,9 @@ const personDropdown = document.querySelector('#person-dropdown');
 const personDropdownBtn = document.querySelector('#person-dropdown-btn');
 const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
 const mobileMenuDropdown = document.querySelector('#mobile-menu-dropdown');
+const incrementBtn = document.querySelector('#btn-incr');
+const decrementBtn = document.querySelector('#btn-decr');
+const quantity = document.querySelector('#quantity');
 
 const toggleBag = (e) => {
   e.preventDefault()
@@ -28,3 +31,24 @@ const toggleMobileDropdown = (e) => {
 }
 
 mobileMenuBtn.addEventListener('click', toggleMobileDropdown)
+
+// setting quantity of orders in a generic function
+const setQuantity = (e) => {
+  let btnId = e.target.id;
+
+  if (btnId) {
+    if (btnId === "btn-incr") {
+      return quantity.value++
+    } else if (btnId === "btn-decr") {
+      if (quantity.value <= 1) {
+        return;
+      }
+      return quantity.value--
+    } else {
+      alert("My bad!")
+    }
+  }
+}
+
+incrementBtn.addEventListener('click', setQuantity)
+decrementBtn.addEventListener('click', setQuantity)

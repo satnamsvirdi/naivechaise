@@ -211,17 +211,20 @@
                 Quantity
               </p>
               <div class="sm:w-1/2 flex h-100 border border-gray-300">
-                <button class="bg-white hover:bg-gray-100 flex-1 flex place-content-center py-3" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                <button
+                  class="bg-white hover:bg-gray-100 flex-1 flex place-content-center py-3 disabled:opacity-25 disabled:cursor-not-allowed "
+                  type="button" id="btn-decr">
+                  <svg id="btn-decr" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     class="bi bi-dash self-center" viewbox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
                   </svg>
                 </button>
 
-                <input type="number" class="bg-gray-200 w-12 text-center pl-2 flex-1" value="1" />
+                <input type="number" class="bg-gray-200 w-12 text-center pl-2 flex-1" value="1" min="1" id="quantity" />
 
-                <button class="bg-white hover:bg-gray-100 flex-1 flex place-content-center py-3" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                <button class="bg-white hover:bg-gray-100 flex-1 flex place-content-center py-3 disabled:opacity-50"
+                  type="button" id="btn-incr">
+                  <svg id="btn-incr" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                     class="bi bi-plus self-center" viewbox="0 0 16 16">
                     <path fill-rule="evenodd"
                       d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
