@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build:css": "postcss custom.css -o dist/tailwind.css"
+    "build:css": "postcss custom.css -o dist/tailwind.css",
+    "watch:css": "watch 'custom.css'"
   },
   "author": "Satnam S Virdi",
   "license": "ISC",
