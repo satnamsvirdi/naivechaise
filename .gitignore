@@ -3,3 +3,6 @@ node_modules
 
 # cdn version
 tailwind.css
+
+# misc
+custom-styles.css

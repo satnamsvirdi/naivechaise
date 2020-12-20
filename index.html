@@ -9,8 +9,7 @@
   <title>Naive Chaise | Naive Low Chair Shop</title>
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="/dist/tailwind.css" defer>
-  <link rel="stylesheet" href="/custom-styles.css" defer />
+  <link rel="stylesheet" href="/dist/tailwind.css" />
 </head>
 
 <body>
@@ -44,12 +43,17 @@
             <div class="hidden absolute -bottom-18 right-0 /my-1 bg-white shadow-xl border border-gray-200"
               id="person-dropdown">
               <ol class="w-36 text-left pb-2">
-                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Account</li>
-                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Orders</li>
-                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">Log Out</li>
+                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">
+                  Account
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">
+                  Orders
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 hover:text-gray-800">
+                  Log Out
+                </li>
               </ol>
             </div>
-
           </li>
 
           <li class="hover:text-gray-900 relative">
@@ -99,7 +103,6 @@
     </div>
   </header>
 
-
   <aside class="hidden fixed right-0 top-0 bottom-0 h-full lg:w-2/5 xl:w-2/6 bg-white text-gray-800 p-6">
     <div class="absolute right-8 top-6 ">
       <button class="w-8 h-8 flex place-content-center rounded-full text-center bg-red-100 text-red-800" type="button"
@@ -111,7 +114,7 @@
         </svg>
       </button>
     </div>
-    <!--   show some headers or tabs   -->
+
     <div class="mb-10">
       <h3 class="text-xl font-medium">Your Bag</h3>
       <p>Guest</p>
@@ -141,9 +144,7 @@
         </form>
       </div>
     </div>
-    <!--     then show bag items (if any) and a checkout button   -->
   </aside>
-
 
   <main class="bg-white">
     <!--    Hero Section    -->
@@ -151,7 +152,7 @@
       <div class="container flex flex-col lg:flex-row mx-auto">
         <div class="flex-1">
           <div class="flex justify-center h-full w-full pt-12 pb-0 lg:py-24 relative">
-            <img class=""
+            <img class="" height="400" width="350"
               src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fhero-lg-s-h.webp?v=1608129909036"
               alt="naive low chair photo" />
             <span
@@ -211,21 +212,20 @@
                 Quantity
               </p>
               <div class="sm:w-1/2 flex h-100 border border-gray-300">
-                <button
-                  class="bg-white hover:bg-gray-100 flex-1 flex place-content-center py-3 disabled:opacity-25 disabled:cursor-not-allowed "
-                  type="button" id="btn-decr">
-                  <svg id="btn-decr" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                    class="bi bi-dash self-center" viewbox="0 0 16 16">
+                <button class="bg-white hover:bg-gray-100 flex-1 flex place-content-center py-3  btn-decr"
+                  type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-dash self-center btn-decr" viewbox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
                   </svg>
                 </button>
 
-                <input type="number" class="bg-gray-200 w-12 text-center flex-1" value="1" min="1" id="quantity" />
+                <input type="number" class="bg-gray-200 w-12 text-center pl-2 flex-1" value="1" min="1" id="quantity" />
 
-                <button class="bg-white hover:bg-gray-100 flex-1 flex place-content-center py-3 disabled:opacity-50"
-                  type="button" id="btn-incr">
-                  <svg id="btn-incr" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                    class="bi bi-plus self-center" viewbox="0 0 16 16">
+                <button class="bg-white hover:bg-gray-100 flex-1 flex place-content-center py-3  btn-incr"
+                  type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-plus self-center btn-incr" viewbox="0 0 16 16">
                     <path fill-rule="evenodd"
                       d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                   </svg>
@@ -521,8 +521,29 @@
     </div>
   </footer>
 
-  <!--     <script src="/lazysizes.min.js" async ></script> -->
   <script src="/script.js" defer></script>
+  <style>
+    body.hide>main,
+    body.hide>header {
+      filter: blur(10px);
+    }
+
+    body.hide>aside {
+      z-index: 999;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  </style>
 </body>
 
 </html>
