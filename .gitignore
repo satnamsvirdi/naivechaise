@@ -6,3 +6,6 @@ node_modules
 
 # misc
 custom-styles.css
+package.json
+package-lock.json
+postcss.config.jsontailwind.config.js
