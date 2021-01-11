@@ -2,7 +2,7 @@
 node_modules
 
 # cdn version
-tailwind.css
+/tailwind.css
 
 # misc
 custom-styles.css
