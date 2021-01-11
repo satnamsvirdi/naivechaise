@@ -9,7 +9,8 @@
   <title>Naive Chaise | Naive Low Chair Shop</title>
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="/dist/tailwind.css" />
+  <link rel="stylesheet" href="/tailwind.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -103,10 +104,11 @@
     </div>
   </header>
 
-  <aside class="hidden fixed right-0 top-0 bottom-0 h-full lg:w-2/5 xl:w-2/6 bg-white text-gray-800 p-6">
+  <aside class="hidden fixed right-0 top-0 bottom-0 h-full lg:w-2/5 /xl:w-2/6 xl:w-4/12 bg-white text-gray-800 p-6">
     <div class="absolute right-8 top-6 ">
-      <button class="w-8 h-8 flex place-content-center rounded-full text-center bg-red-100 text-red-800" type="button"
-        id="close-bag">
+      <button
+        class="w-8 h-8 flex place-content-center rounded-full text-center bg-gray-100 text-gray-400 hover:bg-red-100 hover:text-red-800"
+        type="button" id="close-bag">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x self-center"
           viewbox="0 0 16 16">
           <path fill-rule="evenodd"
@@ -151,14 +153,16 @@
     <section class="bg-gray-100 mb-12 lg:mb-28">
       <div class="container flex flex-col lg:flex-row mx-auto">
         <div class="flex-1">
-          <div class="flex justify-center h-full w-full pt-12 pb-0 lg:py-24 relative">
-            <img class="" height="400" width="350"
-              src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fhero-lg-s-h.webp?v=1608129909036"
-              alt="naive low chair photo" />
-            <span
-              class="uppercase bg-yellow-200 rounded-full p-6 h-20 w-20 absolute right-8 top-16 sm:right-40 md:right-56 lg:right-24 lg:top-32 xl:right-40 flex place-items-center">
-              <strong>10% off</strong>
-            </span>
+          <div class="flex justify-center h-full pt-12 pb-0 lg:py-24">
+            <div class="relative" style="height: 300pt; ">
+              <img height="400" width="350"
+                src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fhero-lg-s-h.webp?v=1608129909036"
+                alt="naive low chair photo" style="min-height: 300pt" data-aos="fade-in" />
+              <span
+                class="uppercase bg-yellow-200 rounded-full p-6 h-20 w-20 flex place-items-center absolute top-4 right-4">
+                <strong>10% off</strong>
+              </span>
+            </div>
           </div>
         </div>
         <div class="flex-1">
@@ -251,17 +255,17 @@
           </h2>
           <div class="flex flex-col lg:flex-row gap-4 lg:gap-4">
             <div class="flex-1">
-              <img class="w-full animate-fadeIn" data-delay=".2s"
+              <img class="w-full animate-fadeIn" data-aos="fade-up" data-aos-delay="50" height="480" width
                 src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-1.webp?v=1608129447334"
                 alt="chair image" />
             </div>
             <div class="flex-1">
-              <img class="w-full animate-fadeIn" data-delay=".6s"
+              <img class="w-full animate-fadeIn" data-aos="fade-up" data-aos-delay="150" height="480" width
                 src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-2.webp?v=1608129456411"
                 alt="chair image" />
             </div>
             <div class="flex-1">
-              <img class="w-full animate-fadeIn" data-delay="1s"
+              <img class="w-full animate-fadeIn" data-aos="fade-up" data-aos-delay="300" height="480" width
                 src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fp-lg-h-3.webp?v=1608129461243"
                 alt="chair image" />
             </div>
@@ -271,32 +275,35 @@
     </section>
 
     <!--    Offset Posters    -->
-    <section class="overflow-hidden mb-4 lg:mb-28">
-      <div class="container flex flex-col lg:flex-row px-4 sm:mx-auto mt-12 lg:mt-24 lg:px-36">
-        <div class="flex-1">
-          <h3 class="text-3xl lg:text-4xl font-medium w-11/12">
+    <section class="overflow-hidden mb-4 lg:mb-28 ">
+      <div class="container flex flex-col lg:flex-row px-4 sm:mx-auto mt-12 lg:mt-24 lg:px-36 ">
+        <div class="flex-1 ">
+          <h3 class="text-3xl lg:text-4xl font-medium w-11/12 ">
             Super comfortable angled seat and curved back
           </h3>
         </div>
-        <div class="flex-1 mt-4 lg:mt-0 relative" style="min-height: 100pt; height: 350pt; max-height: 1000pt;">
-          <img class="w-full lg:absolute lg:top-20 lg:left-32 lg:transform lg:scale-150"
+        <div class="flex-1 mt-4 lg:mt-0 relative " style="min-height: 100pt; height: 350pt; max-height: 1000pt;"
+          data-aos="fade-up">
+          <img
+            class="w-full lg:absolute lg:top-20 lg:left-32 lg:transform lg:scale-150 xl:scale-125 xl:static xl:ml-16 xl:mt-10"
             src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-1.webp?v=1608129420171"
-            alt="chair image unsplash" loading="lazy" />
+            alt="three naive chaise chiars" />
         </div>
       </div>
     </section>
 
-    <section class="overflow-hidden mb-4 lg:mb-28">
-      <div class="container flex flex-col lg:flex-row px-4 sm:mx-auto mt-12 lg:mt-24 lg:px-36">
-        <div class="flex-1 order-2 lg:order-1 mt-4 lg:mt-0 w-full lg:relative"
-          style="min-height: 100pt; height: 350pt; max-height: 700pt;">
-          <img class="w-full lg:absolute lg:top-20 lg:right-32 lg:transform lg:scale-150"
+    <section class="overflow-hidden mb-4 lg:mb-28 ">
+      <div class="container flex flex-col lg:flex-row px-4 sm:mx-auto mt-12 lg:mt-24 lg:px-36 ">
+        <div class="flex-1 order-2 lg:order-1 mt-4 lg:mt-0 w-full lg:relative "
+          style="min-height: 100pt; height: 350pt; max-height: 700pt;" data-aos="fade-up">
+          <img
+            class="w-full lg:absolute lg:top-20 lg:right-32 lg:transform lg:scale-150 xl:scale-125 xl:static xl:-ml-24 xl:mt-10"
             src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-2.webp?v=1608129422594"
-            loading="lazy" />
+            alt="blue naive low chair" />
         </div>
-        <div class="flex-1 order-1 lg:order-2">
-          <h3 class="text-2xl lg:text-4xl font-medium lg:pr-4 lg:pl-6 w-11/12">
-            Sturdy<br />and graceful
+        <div class="flex-1 order-1 lg:order-2 ">
+          <h3 class="text-2xl lg:text-4xl font-medium lg:pr-4 lg:pl-6 w-11/12 ">
+            Sturdy and graceful
           </h3>
         </div>
       </div>
@@ -305,14 +312,16 @@
     <section class="overflow-hidden mb-20 lg:mb-40">
       <div class="container flex flex-col lg:flex-row px-4 sm:mx-auto mt-12 lg:mt-24 lg:px-36">
         <div class="flex-1 w-11/12 lg:w-full">
-          <h3 class="text-2xl lg:text-4xl font-medium lg:pr-4 w-11/12">
+          <h3 class="text-2xl lg:text-4xl font-medium lg:pr-4 w-11/12 ">
             Lithuanian design aesthetics
           </h3>
         </div>
-        <div class="flex-1 mt-4 lg:mt-0 w-full relative" style="min-height: 100pt; height: 350pt; max-height: 700pt;">
-          <img class="w-full lg:absolute lg:top-20 lg:left-32 lg:transform lg:scale-150"
+        <div class="flex-1 mt-4 lg:mt-0 w-full relative" style="min-height: 100pt; height: 350pt; max-height: 700pt;"
+          data-aos="fade-up">
+          <img
+            class="w-full lg:absolute lg:top-20 lg:left-32 lg:transform lg:scale-150 xl:scale-125 xl:static xl:ml-16 xl:mt-10"
             src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fl-lg-h-3.webp?v=1608129438878"
-            loading="lazy" alt="chair image" />
+            alt="naive low chair assembly parts" />
         </div>
       </div>
     </section>
@@ -324,10 +333,10 @@
             Style your space with tradition and charm
           </h3>
         </div>
-        <div class="mt-4 lg:mt-0 w-full">
-          <img class="object-contain md:object-cover w-full max-h-56" style="max-height: 250pt;"
+        <div class="mt-4 lg:mt-0 w-full" style="min-height: 100pt; max-height: 150pt" data-aos="fade-in">
+          <img class="object-contain md:object-cover w-full h-full"
             src="https://cdn.glitch.com/d4b51455-192c-469f-98be-80b3c865d1bf%2Fw-lg-h.webp?v=1608129457649"
-            loading="lazy" alt="chair image" />
+            alt="chair image" />
         </div>
       </div>
     </section>
@@ -520,7 +529,6 @@
     </div>
   </footer>
 
-  <script src="/script.js" defer></script>
   <style>
     body.hide>main,
     body.hide>header {
@@ -543,6 +551,16 @@
       -moz-appearance: textfield;
     }
   </style>
+
+  <script src="/script.js" defer></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 400,
+      easing: 'ease-out',
+    }) 
+  </script>
 </body>
 
 </html>
